@@ -740,6 +740,7 @@ body {
   #section-4 {
     height: 100vh;
     width: 100vw;
+    padding-bottom: 10vh;
     background: linear-gradient(to right, #050208, rgb(107, 6, 90));
     display: flex;
     flex-direction: column;
@@ -761,6 +762,9 @@ body {
         display: none;
         height: 100%;
         width: 100%;
+        img {
+          z-index: -1;
+        }
 
         .main {
           height: 100%;
@@ -783,7 +787,7 @@ body {
           .testimonial {
             width: 50%;
             height: 100%;
-            background-color: rgb(29, 48, 9);
+            background-color: rgba(29, 48, 9, 0.5);
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -815,6 +819,7 @@ body {
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
       user-select: none;
+      z-index: 10;
     }
 
     /* Position the "next button" to the right */
@@ -887,6 +892,42 @@ body {
       .next,
       .text {
         font-size: 11px;
+      }
+    }
+  }
+}
+#footer {
+  width: 100vw;
+  height: 80vh;
+  background-color: #3e3746;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .main {
+    text-align: center;
+    h1,
+    h3 {
+      font-size: 18px;
+      margin-bottom: 14px;
+      color: wheat;
+      font-weight: 500;
+    }
+    p {
+      padding-top: 10px;
+      color: wheat;
+    }
+    .line {
+      width: 100vw;
+      height: 1px;
+      background-color: rgba(227, 212, 212, 0.202);
+      margin-top: 50px;
+    }
+    .end {
+      color: white;
+      margin-top: 60px;
+      h4 {
+        font-weight: normal;
+        margin-bottom: 10px;
       }
     }
   }
